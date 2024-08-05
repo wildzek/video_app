@@ -40,7 +40,7 @@ class _CustomIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        IconButton(onPressed: () {}, icon: Icon(iconData, color: color, size: 30)),
+        IconButton(onPressed: () {}, icon: Icon(iconData, color: color, size: 30)), if (value!=0)
         Text(HumanFormats.humanReadableNumber(value.toDouble())),
       ],
     );
