@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:video_app/presentation/screens/discover/widgets/video/gradient_background.dart';
 import 'package:video_app/shared/data/local_video_post.dart';
 import 'package:video_player/video_player.dart';
 
@@ -51,11 +52,12 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
               }
               controller.play();
             },
-            
+
             child: AspectRatio(
                 aspectRatio: controller.value.aspectRatio,
                 child: Stack(children: [
                   VideoPlayer(controller),
+                  VideoBackground(stops: const[0.8, 1.0]),
                   Positioned(
                       bottom: 50,
                       left: 20,
