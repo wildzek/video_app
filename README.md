@@ -1,4 +1,4 @@
-# Video Scroll App
+# Video App
 
 Una aplicación básica de videos en Flutter que permite hacer scroll y cambiar de video, similar a TikTok. Esta aplicación reproduce videos desde archivos locales, implementa botones de interacción y sigue los principios de arquitectura limpia.
 
